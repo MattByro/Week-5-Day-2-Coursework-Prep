@@ -4,7 +4,7 @@ Created on Fri Feb 10 16:31:21 2023
 
 @author: N1163880
 """
-
+from team import *
 selection = 0
 while selection != 6:
     print("Please select one of the following:")
@@ -15,3 +15,4 @@ while selection != 6:
     print("5. Declare relegation and promotion with champion results")
     print("6. Quit")
     selection = int(input("Enter your selection (1-6): "))
+
