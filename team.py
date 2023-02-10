@@ -33,3 +33,7 @@ def load_teams_fr_file():
         print("Please save the file in the project folder!")
     finally:
         my_file.close()
+        return teams
+
+ts = load_teams_fr_file()
+print
