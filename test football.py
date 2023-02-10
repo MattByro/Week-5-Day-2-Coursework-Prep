@@ -2,13 +2,26 @@
 try:
  my_file = open ("epl.txt", "r")
  teams = []
+ stadiums = []
+ areas = []
  for line in my_file:
-     data = line.split()
-     teams.append(data)
+     data1 = line.split(":")
+     club = data1[0]
+     data2 = data1[1].split("-")
+     stadium = data2[0]
+     area = data2[1]
+     teams.append(club)
+     stadiums.append(stadium)
+     areas.append(area)
+
+
 
 
 finally:
   my_file.close()
+print(teams)
+print(stadiums)
+print(areas)
 #this is the code for the start menu
 selection = 0
 while selection != 6:
