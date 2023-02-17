@@ -1,5 +1,5 @@
-#import team
-
+from team_dict import *
+print(t[3].club, t[3].homeground, t[3].city)
 number = 0
 while number != 6:
     print("Please select one of the following:")
