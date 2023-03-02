@@ -1,3 +1,4 @@
+
 try:
     f = open("epl.txt", "r")
 
@@ -9,10 +10,20 @@ finally:
 
 # Team class
 class Team:
-    def __init__(self, clubname, stadium, city):
+    def __init__(self, clubname, stadium, city, played_matches=0, wins_set = 0, draws_set = 0, losses_set = 0, goals_scored=0, goals_conceded=0, goal_difference=0, points=0, manager=None, top_scorer=None):
         self.club = clubname
         self.homeground = stadium
         self.city = city
+        self.played_matches = played_matches
+        self.wins = wins_set
+        self.draws = draws_set
+        self.losses = losses_set
+        self.goals_scored = goals_scored
+        self.goals_conceded = goals_conceded
+        self.goal_difference = goal_difference
+        self.points = points
+        self.manager = manager
+        self.top_scorer = top_scorer
 
 
 teams_list_final = []
@@ -33,4 +44,3 @@ t = []
 for team in teams_list_final:
     t.append(Team(team["Club"], team["Stadium"], team["City"]))
 
-print(t[3].club, t[3].homeground, t[3].city)
